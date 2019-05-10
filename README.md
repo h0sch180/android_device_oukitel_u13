@@ -1,4 +1,4 @@
-# LineageOS 14.1 device tree for OUKITEL U13 
+# ViperOS Extended device tree for OUKITEL U13 
 
 OUKITEL U13
 ==============

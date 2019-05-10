@@ -25,7 +25,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/OUKITEL/U13/lineage_U13.mk)
+$(call inherit-product, device/OUKITEL/U13/viper_U13.mk)
 
 # Inherit device configuration
 #$(call inherit-product, $(LOCAL_PATH)/device_U13.mk)
@@ -34,7 +34,7 @@ $(call inherit-product, device/OUKITEL/U13/lineage_U13.mk)
 # Device branding
 PRODUCT_RELEASE_NAME := U13
 PRODUCT_DEVICE := U13
-PRODUCT_NAME := lineage_U13
+PRODUCT_NAME := viper_U13
 PRODUCT_BRAND := OUKITEL
 PRODUCT_MANUFACTURER := OUKITEL
 PRODUCT_MODEL := OUKITEL U13
