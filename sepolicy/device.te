@@ -17,6 +17,10 @@ type gsensor_device, dev_type;
 type msensor_device, dev_type;
 type mcube_device, dev_type;
 type gyroscope_device, dev_type;
+type irrx_device, dev_type;
+
+# Fingerprint device
+type esfp0_device, dev_type, mlstrustedobject;
 
 # Media
 type accdet_device, dev_type;
