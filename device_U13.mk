@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/CUBOT/MAX
+LOCAL_PATH := device/OUKITEL/U13
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
