@@ -1,4 +1,4 @@
-# LineageOS 14.1 device tree for OUKITEL U13 
+# Resurrection Remix 5.8.5 device tree for OUKITEL U13 
 
 OUKITEL U13
 ==============
@@ -18,10 +18,10 @@ Camera  | Front: 5.0MPx, Back 13MPx, LED Flash
 
 # Instructions
 ```
-repo init -u git://github.com/LineageOS/android.git -b cm-14.1
-repo sync
+repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
+repo sync -f --force-sync --no-clone-bundle
 git https://github.com/h0sch180/android_device_oukitel_u13.git device/OUKITEL/U13
-./device/OUKITEL/U13/patches_mtk/apply-patches.sh
+device/OUKITEL/U13/patches_mtk/apply-patches.sh
 . build/envsetup.sh
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
 ./prebuilts/sdk/tools/jack-admin kill-server
