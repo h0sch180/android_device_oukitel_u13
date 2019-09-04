@@ -1,4 +1,4 @@
-# LineageOS 14.1 device tree for OUKITEL U13 
+# AOSPExtended Nougat device tree for OUKITEL U13 
 
 OUKITEL U13
 ==============
@@ -14,19 +14,20 @@ Battery | 3000 mAh
 Display | 5.5" 1080 x 1920 px
 Camera  | Front: 5.0MPx, Back 13MPx, LED Flash
 
-![DEXP](https://github.com/h0sch180/android_device_oukitel_u13/blob/master/oukitel_u13.jpg "Oukitel U13")
+![DEXP](https://github.com/h0sch180/android_device_oukitel_u13/blob/aospx/oukitel_u13.jpg "Oukitel U13")
 
 # Instructions
 ```
-repo init -u git://github.com/LineageOS/android.git -b cm-14.1
-repo sync
-git https://github.com/h0sch180/android_device_oukitel_u13.git device/OUKITEL/U13
+repo init -u git://github.com/AospExtended/manifest.git -b 7.x
+repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+git https://github.com/h0sch180/android_device_oukitel_u13.git -b aospx device/OUKITEL/U13
 ./device/OUKITEL/U13/patches_mtk/apply-patches.sh
 . build/envsetup.sh
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
 ./prebuilts/sdk/tools/jack-admin kill-server
 ./prebuilts/sdk/tools/jack-admin start-server
-brunch U13
+lunch aosp_U13-userdebug
+mka aex -jx
 ```
 
 # Acknowledgements
